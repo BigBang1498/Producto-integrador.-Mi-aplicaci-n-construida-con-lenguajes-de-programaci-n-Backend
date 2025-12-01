@@ -1,7 +1,6 @@
 <?php
 $user = $_POST['user'] ?? 'user1';
 
-// Admin solo guarda en su propia carpeta
 if ($user === 'admin') {
   $dir = __DIR__ . "/../galleries/admin";
 } else {
