@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de imágenes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Galería</h1>
+
+  <label for="userSelect">Selecciona usuario:</label>
+  <select id="userSelect">
+    <option value="user1">Usuario 1</option>
+    <option value="user2">Usuario 2</option>
+    <option value="user3">Usuario 3</option>
+    <option value="admin">Admin</option>
+  </select>
+
+  <form id="uploadForm">
+    <input type="file" id="fileInput" accept="image/*">
+    <button type="submit">Subir</button>
+  </form>
+
+  <div id="gallery"></div>
+
+  <!-- Botón especial para admin -->
+  <div id="adminPanel" style="display:none; margin-top:20px;">
+    <h2>Panel de administración</h2>
+    <button onclick="deleteUser('user1')">Eliminar Usuario 1</button>
+    <button onclick="deleteUser('user2')">Eliminar Usuario 2</button>
+    <button onclick="deleteUser('user3')">Eliminar Usuario 3</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

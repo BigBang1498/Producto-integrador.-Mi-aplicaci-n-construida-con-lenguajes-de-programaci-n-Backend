@@ -1,0 +1,90 @@
+/* ====== Reset básico ====== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* ====== Encabezado ====== */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  /* ====== Selector de usuario ====== */
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* ====== Formulario de subida ====== */
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="file"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 6px 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  /* ====== Galería ====== */
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  
+  #gallery div {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  #gallery button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #gallery button:hover {
+    background: #a71d2a;
+  }
+  
