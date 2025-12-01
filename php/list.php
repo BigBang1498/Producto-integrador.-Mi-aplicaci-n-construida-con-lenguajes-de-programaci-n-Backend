@@ -1,7 +1,6 @@
 <?php
 $user = $_GET['user'] ?? 'user1';
 
-// Si es admin, solo muestra su propia galería
 if ($user === 'admin') {
   $dir = __DIR__ . "/../galleries/admin";
 } else {
@@ -10,7 +9,6 @@ if ($user === 'admin') {
 
 $file = "$dir/gallery.json";
 
-// Crear carpeta y archivo si no existen
 if (!is_dir($dir)) {
   mkdir($dir, 0775, true);
 }
