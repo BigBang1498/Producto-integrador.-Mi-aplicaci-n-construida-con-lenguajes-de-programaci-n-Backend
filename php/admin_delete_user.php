@@ -2,7 +2,6 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-// Solo el admin puede usar este script
 $user = $_POST['user'] ?? null;
 
 if ($user === null) die("Usuario no especificado");
